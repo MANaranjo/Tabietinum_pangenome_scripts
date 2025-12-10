@@ -3,17 +3,10 @@ library(maps)
 library(mapproj)
 
 t <- ape::read.tree(text="((Triab_TA100615M3:0.0198922,Triab_TA10184M2:0.0221727)N12:0.00872446,((Triab_TA10555M1:0.00849551,(Triab_TA10311M2:0.00794277,(Triab_TA10264M3:0.00677455,Triab_TA10321M1:0.00690797)N18:0.00908474)N16:0.00741473)N14:0.0128451,(Triab_TA10277M3:0.0178031,(((Triab_TA10258M1:0.00533656,Triab_TA10257M2:0.00579467)N22:0.00491465,(Triab_TA10252M2:0.00711549,Triab_TA102510M2:0.00597818)N21:0.00591849)N19:0.00624947,(Triab_TA10233M3:0.0115184,(Triab_L15831:0.00890001,((Triab_TA10106M1:0.00751959,Triab_TA10107M1:0.0076432)N26:0.00661191,(Triab_TA10073M1:0.00735836,Triab_TA100919M2:0.00758744)N25:0.0030963)N24:0.00293329)N23:0.00437181)N20:0.00550559)N17:0.00745134)N15:0.0096234)N13:0.0092085)N0;")
-
-
 isolates <- c("Triab_TA100615M3","Triab_TA10184M2","Triab_TA10073M1","Triab_TA100919M2","Triab_TA10106M1","Triab_TA10107M1","Triab_TA10233M3", "Triab_TA10277M3","Triab_TA10252M2","Triab_TA10257M2","Triab_TA10258M1","Triab_TA102510M2","Triab_TA10311M2","Triab_TA10321M1","Triab_TA10264M3", "Triab_TA10555M1","Triab_L15831")
-
 lineages <- c("NorthAmerica_A", "NorthAmerica_C", "North America_B", "North America_B", "North America_B", "North America_B", "North America_B", "EastAsia", "Boreal", "Boreal", "Boreal", "Boreal", "Mediterranean", "Mediterranean", "Mediterranean","Mediterranean", "NorthAmerica_B")
-
-lineages <- c("NorthAmerica_A", "NorthAmerica_C", "North America_B", "North America_B", "North America_B", "North America_B", "North America_B", "EastAsia", "Boreal", "Boreal", "Boreal", "Boreal", "Mediterranean", "Mediterranean", "Mediterranean","Mediterranean", "NorthAmerica_B")
-
 latitude <- c(47.31278, 33.29728, 47.631389, 47.418611, 47.3141667, 47.3144444, 44.259559, 37.7738889, 59.7521335, 59.7507741, 59.750345, 59.7501699, 46.94271, 47.3627778, 44.491287, 37.11325, 40)
 longitude <- c(-65.41222, -110.835075, -65.616111, -66.88138, -67.02861111, -67.02805556, -124.044062, 127.5844444, 10.7703235, 10.7688778, 10.7687742, 10.7667511, 7.69609, 8.448055556, 9.41727, -8.84344, -95)
-
 cols = c(Triab_TA100615M3 = "#32CD32", Triab_TA10184M2 = "#556B2F", Triab_TA10073M1 = "#228B22", Triab_TA100919M2 = "#228B22", Triab_TA10106M1 = "#228B22", Triab_TA10107M1 = "#228B22", Triab_TA10233M3 = "#228B22",  Triab_TA10277M3 = "#FFD700", Triab_TA10252M2 = "#FA8072", Triab_TA10257M2 = "#FA8072", Triab_TA10258M1 = "#FA8072", Triab_TA102510M2 = "#FA8072", Triab_TA10311M2 = "#1E90FF", Triab_TA10321M1 = "#1E90FF", Triab_TA10264M3 = "#1E90FF", Triab_TA10555M1 = "#1E90FF", Triab_L15831 = "#228B22")
 
 arr = array(c(latitude, longitude), dim = c(17, 2))
