@@ -11,7 +11,7 @@ import argparse
 from scipy.optimize import curve_fit
 import seaborn as sns
 
-parser = argparse.ArgumentParser(description="This script generates a csv with many per gene data for downstream analyses and plots")
+parser = argparse.ArgumentParser(description="This script generates several plots and analyses")
 parser.add_argument("-o", "--orthofinder_dir", required=True, help="Directory containing the output of an OrthoFinder run")
 parser.add_argument("-e", "--entry_list", required=True, help="File containing the list of entries to consider for computing the pangenome")
 parser.add_argument("-n", "--name", default="", help="A string for the title of the plot")
